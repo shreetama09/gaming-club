@@ -6,10 +6,10 @@
 }
 
 :root{
-    --dark-bg:#0a0a0a;
-    --darker-bg:#050505;
-    --accent:#2ecc71;
-    --accent-glow:rgba(46,204,113,0.4);
+    --dark-bg:#1c0f19;
+    --darker-bg:#22101e;
+    --accent:#c753a4;
+    --accent-glow:rgba(163, 89, 135, 0.4);
     --text:#ffffff;
 }
 
@@ -29,7 +29,7 @@ body{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(10,10,10,0.95);
+    background: rgba(42, 9, 33, 0.95);
     backdrop-filter:blur(10px);
     z-index:1000;
     border-bottom:1px solid rgba(255,255,255,0.1);
@@ -138,6 +138,7 @@ body{
 #contact a:hover::after{
     width: 100%;
 }
+
 @keyframes float{
     0%, 100% { tarnsform: translateY(0);}
     50% {transform:translateY(-20px);}
@@ -161,7 +162,7 @@ body{
 .cta-button{
     display: inline-block;
     padding:1rem 2rem;
-    background: linear-gradient(45deg, var(--accent-glow),#4da672);
+    background: linear-gradient(45deg, var(--accent-glow),#a3557f);
     color: white;
     border-radius:8px;
     text-decoration: none;
@@ -211,6 +212,7 @@ footer{
     padding: 3rem 5%;
     text-align:center;
     border-top: 1px solid rgba(255,255,255,0.1);
+
 }
 
 .social-links{
