@@ -100,7 +100,44 @@ body{
     animation:float 3s ease-in-out infinite;
     filter:grayscale(0.2) contrast(1.1);
 }
+#contact{
+    background-color: #3f182d;
+    padding: 3rem 5%;
+    text-align:center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
 
+#contact h2{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#contact p{
+    font-size: 1.2rem;
+    margin:12px 0;
+}
+
+#contact a{
+    color:var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition:all 0.3s ease;
+    position:relative;
+}
+
+#contact a::after{
+    content: '';
+    position:absolute;
+    bottom:-5px;
+    left:0;
+    width:0;
+    height:2px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+}
+#contact a:hover::after{
+    width: 100%;
+}
 @keyframes float{
     0%, 100% { tarnsform: translateY(0);}
     50% {transform:translateY(-20px);}
